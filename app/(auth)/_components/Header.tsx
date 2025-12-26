@@ -2,49 +2,33 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/60 backdrop-blur">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-        {/* Left: Brand */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="grid h-8 w-8 place-items-center rounded-md bg-white text-black font-bold">
-            M
-          </span>
-          <span className="font-semibold text-white">MyApp</span>
+        <Link href="/" className="font-semibold text-white">
+          CineFlix
         </Link>
 
-        {/* Center: Nav */}
-        <nav className="hidden md:flex items-center gap-8 text-sm text-white/70">
-          <Link href="/" className="hover:text-white">
-            Home
-          </Link>
-          <Link href="/about" className="hover:text-white">
-            About
-          </Link>
+        <nav className="hidden md:flex items-center gap-6 rounded-full border border-white/15 bg-white/10 px-6 py-2 text-sm text-white/80 backdrop-blur-md">
+          <Link href="/" className="hover:text-white transition">Home</Link>
+          <Link href="/about" className="hover:text-white transition">About</Link>
+          <Link href="/movies" className="hover:text-white transition">Movies</Link>
+          <Link href="/ticket-rate" className="hover:text-white transition">Ticket Rate</Link>
         </nav>
 
-        {/* Right: Actions */}
         <div className="flex items-center gap-3">
           <Link
             href="/login"
-            className="h-9 rounded-md border border-white/15 px-4 text-sm font-semibold text-white hover:bg-white/5"
+            className="h-9 rounded-md border border-white/15 px-4 text-sm font-semibold text-white hover:bg-white/10"
           >
             Log in
           </Link>
 
           <Link
             href="/register"
-            className="h-9 rounded-md bg-black px-4 text-sm font-semibold text-white hover:opacity-90"
+            className="h-9 rounded-md bg-white/10 backdrop-blur px-4 text-sm font-semibold text-white hover:bg-white/20"
           >
             Sign up
           </Link>
-
-          <button
-            type="button"
-            aria-label="Theme"
-            className="grid h-9 w-9 place-items-center rounded-md border border-white/15 text-white hover:bg-white/5"
-          >
-            
-          </button>
         </div>
       </div>
     </header>
