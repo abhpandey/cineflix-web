@@ -33,7 +33,7 @@ export default function Header() {
 
           <Link
             href="/register"
-            className="h-9 rounded-md bg-white px-4 text-sm font-semibold text-black hover:opacity-90"
+            className="h-9 rounded-md bg-black px-4 text-sm font-semibold text-white hover:opacity-90"
           >
             Sign up
           </Link>
@@ -43,8 +43,7 @@ export default function Header() {
             aria-label="Theme"
             className="grid h-9 w-9 place-items-center rounded-md border border-white/15 text-white hover:bg-white/5"
           >
-            {/* simple monitor icon */}
-            <span className="text-base">🖥️</span>
+            
           </button>
         </div>
       </div>
