@@ -5,6 +5,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="relative mx-auto flex h-14 max-w-6xl items-center px-4">
 
+        {/* Logo */}
         <Link href="/" className="font-semibold text-white mr-auto pl-2">
           CineFlix
         </Link>
