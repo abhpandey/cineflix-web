@@ -32,7 +32,7 @@ export default function HomePage() {
           </button>
 
           <button className="rounded border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10">
-            More Info
+            About
           </button>
         </div>
       </div>
