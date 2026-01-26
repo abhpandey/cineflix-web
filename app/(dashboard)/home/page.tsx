@@ -19,16 +19,16 @@ export default function HomePage() {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col justify-center px-6 md:px-16 max-w-4xl">
         <h1 className="mb-4 text-4xl font-bold md:text-6xl">
-          Unlimited Movies,<br /> Shows & More
+          New Movies,<br /> BlockBusters!!
         </h1>
 
         <p className="mb-6 max-w-xl text-lg text-white/80">
-          Watch anywhere. Cancel anytime. Experience cinema like never before.
+          Book anywhere. Cancel anytime. Experience cinema like never before.
         </p>
 
         <div className="flex gap-4">
           <button className="rounded bg-red-600 px-6 py-3 text-sm font-semibold hover:bg-red-700">
-            Watch Now
+            Book Now
           </button>
 
           <button className="rounded border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10">
